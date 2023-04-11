@@ -1,0 +1,148 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+}
+
+.main, .header { height: 50%; }
+
+.header { 
+  background-color: #CC0000;
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.user-pic {
+  width: 164px;
+  border-radius: 50%;
+  border: 2px solid var(--black);
+  box-shadow: 0 0 10px var(--black);
+}
+
+.user-name {
+  font-size: 1.8em;
+  color: var(--red);
+  background-color: var(--black);
+  padding: 4px 16px;
+  box-shadow: 1px 1px 2px var(--black);
+  text-shadow: 1px 1px 1px var(--red);
+  border-radius: 16px;
+  margin-top: 10px;
+}
+
+.basa {
+  user-select:none;
+  margin-top: 25px;
+  font-size: 1.4em;
+  background-color: var(--black);
+  min-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  padding: 8px 10px;
+  font-weight: 400;
+  color: var(--red);
+  border-radius: 2px;
+  box-shadow: 0 0 4px var(--black);
+
+}
+
+
+.main { background-color: #000;}
+
+.main__inner {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-item {width: 100%;}
+.links-item:not(:last-child) { margin-bottom: 20px; }
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+  box-shadow: 1px 1px 4px var(--red);
+  padding: 6px 0;
+  width: 100%;
+  text-shadow: 1px 1px 1px var(--black);
+  background-color: var(--red);
+  color: var(--black);
+  font-size: 1.5em;
+  color: inherit;
+  text-decoration: none;
+
+  transition: opacity .2s;
+}
+
+.link:hover {
+  opacity: .85;
+}
+
+.link-icon {
+  margin-right: 12px;
+  width: 36px;
+}
+
+
+@media screen and (max-height: 620px) {
+  body {
+    font-size: 12px;
+  }
+  .container {
+    overflow-y: auto;
+  }
+  .header, .main {
+    height: 300px
+  }
+  .user-pic {
+    width: 124px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  body {
+    font-size: 22px;
+  }
+  .user-pic {
+    width: 204px;
+  }
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 15px;
+  }
+  .user-pic {
+    width: 146px;
+  }
+  .basa {
+    white-space:normal;
+    font-size: 1.3em;
+  }
+}
