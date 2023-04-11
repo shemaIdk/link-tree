@@ -35,7 +35,7 @@ function setBasa(string) {
 }
 
 async function getBasas() {
-  const basas = await fetch('../data/basas.json')
+  const basas = await fetch('/data/basas.json')
     .then(res => res.json())
     .then(res => res.basas);
   
