@@ -106,6 +106,13 @@ body {
   width: 36px;
 }
 
+.birds {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
 
 @media screen and (max-height: 620px) {
   body {
