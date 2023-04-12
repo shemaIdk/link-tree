@@ -71,7 +71,37 @@
     </div>
   </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script >
 
+  document.addEventListener('DOMContentLoaded', function() {
+
+    const height = document.documentElement.clientHeight;
+    const width = document.documentElement.clientWidth;
+
+    VANTA.BIRDS({
+      el: ".birds",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: height,
+      minWidth: width,
+      scale: 1,
+      scaleMobile: 3.00,
+      color1: '#000',
+      color2: '#cc0000',
+      colorMode: "lerpGradient",
+      birdSize: 1.1,
+      speedLimit: 3.50,
+      alignment: 300.00,
+      quantity: 2.80,
+      backgroundAlpha: 0.05
+    })  
+    
+  })
+
+</script>
 <script type="module" src="scripts/basasLoop.js"></script>
 <script src="scripts/sidebar.js"></script>
 </html>
